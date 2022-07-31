@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,9 +14,31 @@
     <!-- Tailwind framework -->
     <link href="dist/output.css" rel="stylesheet" />
 
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+
     <title>Gacha Box</title>
   </head>
-  <body class="ground">
+  <body class="ground dark:bg-gradient-to-bl from-slate-800 to-slate-600">
+    <!-- toggle darkmode -->
+    <li class="flex relative -right-2 mt-2 lg:mt-1 mb-2">
+      <div class="flex absolute">
+        <span class="mr-2 text-xl">🌞</span>
+        <input type="checkbox" class="hidden" id="darkmode" />
+        <label for="darkmode">
+          <div class="flex h-8 w-12 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500 ease-in-out"></div>
+          </div>
+        </label>
+        <span class="ml-2 text-xl">🌚</span>
+      </div>
+    </li>
+
     <section>
       <div class="container">
         <h1 class="text-center mt-11 font-extrabold text-white text-5xl lg:text-[7rem] judul hover:text-sky-400 lg:hover:text-[7.25rem] hover:text-6xl md:text-[6rem]">Gacha Box</h1>
@@ -155,4 +177,6 @@
       }
     }
   </script>
+
+  <script src="script.js"></script>
 </html>
