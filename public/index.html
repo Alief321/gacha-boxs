@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/node_modules/magic.css/dist/magic.css" />
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Gacha Box</title>
+  </head>
+  <body class="ground">
+    <section>
+      <div class="container">
+        <h1 class="text-center mt-11 font-extrabold text-white text-[7rem] judul hover:text-sky-400 hover:text-[7.25rem]">Gacha Box</h1>
+        <div class="mx-auto w-full justify-center">
+          <div class="flex flex-wrap overflow-hidden justify-center mt-10 border border-slate-500 w-10/12 mx-auto rounded-3xl px-10 bgimage">
+            <div class="w-1/2 h-72 mr-4 my-5 relative overflow-hidden shake-little lg:w-1/4">
+              <img src="/public/img/1.jpg" alt="1" class="h-full absolute rounded-xl" />
+              <button
+                type="submit"
+                onclick="gerak1()"
+                class="text-slate-700 gam mx-16 mt-28 z-40 h-12 w-1/2 bg-sky-200 border border-sky-500 text-center text-xl font-semibold hover:contrast-150 hover:text-sky-600 rounded-2xl block absolute transition duration-500 hover:scale-110"
+              >
+                Pilih
+              </button>
+              <img src="/public/img/bg.png" alt="bg" class="gam object-left-top object-none z-20 rounded-xl block relative transition duration-500" />
+            </div>
+            <div class="w-1/2 h-72 mr-4 my-5 relative overflow-hidden shake-vertical lg:w-1/4">
+              <img src="/public/img/2.jpg" alt="1" class="h-full absolute block rounded-xl" />
+              <h1 class="w-full text-xl justify-center text-center text-white hover:scale-110 hover:text-sky-300 z-10 absolute block">Pacar Anime</h1>
+              <button
+                onclick="gerak2()"
+                type="submit"
+                class="text-slate-700 gam mx-16 mt-28 z-40 h-12 w-1/2 bg-sky-200 border border-sky-500 text-center text-xl font-semibold hover:contrast-150 hover:text-sky-600 rounded-2xl absolute block transition duration-500 hover:scale-110"
+              >
+                Pilih
+              </button>
+              <img src="/public/img/bg.png" alt="bg" class="gam object-top object-none z-20 rounded-xl block relative transition duration-500" />
+            </div>
+            <div class="w-1/2 h-72 mr-4 my-5 relative overflow-hidden shake-rotate lg:w-1/4">
+              <img src="/public/img/3.jpg" alt="1" class="h-full absolute rounded-xl" />
+              <button
+                type="submit"
+                onclick="gerak3()"
+                class="text-slate-700 gam mx-16 mt-28 z-40 h-12 w-1/2 bg-sky-200 border border-sky-500 text-center text-xl font-semibold hover:contrast-150 hover:text-sky-600 rounded-2xl absolute block transition duration-500 hover:scale-110"
+              >
+                Pilih
+              </button>
+              <img src="/public/img/bg.png" alt="bg" class="gam object-top-right object-none z-20 rounded-xl block relative transition duration-500" />
+            </div>
+            <div class="w-1/2 h-72 mr-4 my-5 relative overflow-hidden shake-horizontal lg:w-1/4">
+              <img src="/public/img/4.jpg" alt="1" class="h-full absolute rounded-xl" />
+              <button
+                type="submit"
+                onclick="gerak4()"
+                class="text-slate-700 gam mx-16 mt-28 z-40 h-12 w-1/2 bg-sky-200 border border-sky-500 text-center text-xl font-semibold hover:contrast-150 hover:text-sky-600 rounded-2xl absolute block transition duration-500 hover:scale-110"
+              >
+                Pilih
+              </button>
+              <img src="/public/img/bg.png" alt="bg" class="gam object-left-bottom object-none z-20 rounded-xl block relative transition duration-500" />
+            </div>
+            <div class="w-1/2 h-72 mr-4 my-5 relative overflow-hidden shake-vertical lg:w-1/4">
+              <img src="/public/img/5.png" alt="1" class="h-full absolute rounded-xl" />
+              <button
+                type="submit"
+                onclick="gerak5()"
+                class="text-slate-700 gam mx-16 mt-28 z-40 h-12 w-1/2 bg-sky-200 border border-sky-500 text-center text-xl font-semibold hover:contrast-150 hover:text-sky-600 rounded-2xl absolute block transition duration-500 hover:scale-110"
+              >
+                Pilih
+              </button>
+              <img src="/public/img/bg.png" alt="bg" class="gam object-bottom object-none z-20 rounded-xl block relative transition duration-500" />
+            </div>
+            <div class="w-1/2 h-72 mr-4 my-5 relative overflow-hidden shake-slow lg:w-1/4">
+              <img src="/public/img/6.jpg" alt="1" class="h-full absolute rounded-xl" />
+              <button
+                onclick="gerak6()"
+                type="submit"
+                class="text-slate-700 gam mx-16 mt-28 z-40 h-12 w-1/2 bg-sky-200 border border-sky-500 text-center text-xl font-semibold hover:contrast-150 hover:text-sky-600 rounded-2xl absolute block transition duration-500 hover:scale-110"
+              >
+                Pilih
+              </button>
+              <img src="/public/img/bg.png" alt="bg" class="gam object-right-bottom object-none z-20 rounded-xl block relative transition duration-500" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button type="submit" class="mb-12 text-xl mt-14 mx-auto h-10 w-32 rounded-2xl border shadow-md border-white bg-sky-500 text-center block font-semibold text-white hover:brightness-150 hover:scale-110 transition" onclick="hapus()">
+      Refresh
+    </button>
+
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#007DFF"
+          fill-opacity="1"
+          d="M0,96L48,128C96,160,192,224,288,245.3C384,267,480,245,576,202.7C672,160,768,96,864,85.3C960,75,1056,117,1152,138.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </footer>
+  </body>
+
+  <script type="text/javascript">
+    var x = document.querySelectorAll('.gam');
+    const xs = document.querySelectorAll('.gam');
+
+    function gerak1() {
+      x[0].classList.add('-translate-x-72');
+      x[1].classList.add('-translate-x-72');
+    }
+
+    function gerak2() {
+      x[2].classList.add('-translate-y-72');
+      x[3].classList.add('-translate-y-72');
+    }
+
+    function gerak3() {
+      x[4].classList.add('translate-x-72');
+      x[5].classList.add('translate-x-72');
+    }
+    function gerak4() {
+      x[6].classList.add('-translate-x-72');
+      x[7].classList.add('-translate-x-72');
+    }
+    function gerak5() {
+      x[8].classList.add('translate-y-72');
+      x[9].classList.add('translate-y-72');
+    }
+    function gerak6() {
+      x[10].classList.add('translate-x-72');
+      x[11].classList.add('translate-x-72');
+    }
+
+    function hapus() {
+      for (const x of xs) {
+        x.classList.remove('translate-x-72', '-translate-x-72', 'translate-y-72', '-translate-y-72');
+      }
+    }
+  </script>
+</html>
